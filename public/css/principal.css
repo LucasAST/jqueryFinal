@@ -1,0 +1,112 @@
+body,
+ul,
+li,
+p {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: Font;
+}
+
+@font-face {
+   font-family: Font;
+   src: url(public/assets/fonts/02_APompadourTextSample.otf);
+}
+
+#nav-link {
+   text-decoration: none;
+   color: white;
+   font-size: 30px;
+}
+
+#nav-link-t {
+   text-decoration: none;
+   color: white;
+   font-size: 40px;
+}
+
+#nav-img {
+   max-width: 100%;
+   display: block;
+}
+
+.cabecalho {
+   background-color: rgb(37, 41, 255);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+
+.menu {
+   display: flex;
+}
+
+.menu li {
+   display: inline-block;
+   margin-left: 10px;
+}
+
+#nav-link:hover {
+   color: #000000;
+}
+
+#nav-link-t:hover {
+   color: #000000;
+}
+
+.menu li a {
+   display: block;
+   padding: 10px;
+}
+
+/*  FOOTER */
+.rodape {
+   background-color: rgb(37, 41, 255);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+}
+
+.social {
+   display: block;
+}
+
+.social li a {
+   display: block;
+   padding: 10px;
+}
+
+.social li {
+   display: inline-block;
+   margin-left: 10px;
+}
+
+.social-link:hover {
+   display: flex;
+   z-index: 1;
+   transform: scale(1.3);
+   transition: all 2s;
+}
+
+/* SECTION */
+.section1,
+.section2,
+.section3,
+.section4,
+.section5 {
+   width: 100%;
+   height: auto;
+   background-color: aqua;
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+   
+}
+.container{
+   display: flex;
+   flex-direction: column;
+}

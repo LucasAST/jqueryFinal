@@ -1,6 +1,3 @@
-/*! lightslider - v1.1.6 - 2016-10-25
-* https://github.com/sachinchoolur/lightslider
-* Copyright (c) 2016 Sachin N; Licensed MIT */
 (function ($, undefined) {
     'use strict';
     var defaults = {
@@ -13,7 +10,7 @@
         useCSS: true,
         cssEasing: 'ease', //'cubic-bezier(0.25, 0, 0.25, 1)',
         easing: 'linear', //'for jquery animation',//
-        speed: 500, //ms'
+        speed: 400, //ms'
         auto: false,
         pauseOnHover: false,
         loop: false,
@@ -27,9 +24,12 @@
         adaptiveHeight: false,
         vertical: false,
         verticalHeight: 500,
+        vThumbWidth: 100,
+        thumbItem: 10,
         pager: true,
         gallery: false,
         galleryMargin: 5,
+        thumbMargin: 5,
         currentPagerPosition: 'middle',
         enableTouch: true,
         enableDrag: true,
@@ -338,7 +338,7 @@
             pager: function () {
                 var $this = this;
                 refresh.createPager = function () {
-                    
+                    thumbWidth = (elSize - ((settings.thumbItem * (settings.thumbMargin)) - settings.thumbMargin)) / settings.thumbItem;
                     var $children = $slide.find('.lslide');
                     var length = $slide.find('.lslide').length;
                     var i = 0,

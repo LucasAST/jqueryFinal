@@ -7,7 +7,6 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <!-- JQuery & Bootstrap-->
-
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 
    <link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
@@ -21,11 +20,33 @@
    <link rel="stylesheet" href="public/css/principal.css">
    <link rel="stylesheet" href="public/css/lightslider.css">
 
+<style>
+   ul{
+     list-style: none outside none;
+      padding-left: 0;
+        margin: 0;
+  }
+    .demo .item{
+        margin-bottom: 60px;
+    }
+  .content-slider li{
+      background-color: transparent;
+      text-align: center;
+      color: #FFF;
+      font-size: 50px;
+  }
+  .content-slider h3 {
+      margin: 0;
+      padding: 70px 0;
+  }
+  .demo{
+     width: 1500px;
+  }
+</style>
 
 </head>
 
 <body>
-
    <header class="cabecalho">
       <a id="nav-link-t" href="#">Lorem</a>
       <nav class="menu">
@@ -36,211 +57,214 @@
          </ul>
       </nav>
    </header>
-
-
    </div>
-
    <div class="container">
 
-      <section class="section1">
-         <h1 class="title-1">Título</h1>
-
+      <section id="section1">
          <div class="flex">
-         <article >
-            <button type="button" id="btn-ancora">
-               <a id="link-ancora" href="">Vacinas</a>
-            </button><br>
-            
-          </article>
-          <article >
-            <button type="button" id="btn-ancora">
-               <a id="link-ancora" href="">Prevenção</a>   
-            </button><br>
-            
-          </article>
-          <article >
-            <button type="button" id="btn-ancora">
-               <a id="link-ancora" href="">Prevenção</a>  
-            </button><br>
-            
-          </article>
-         </div>
-        </section>
-     
-
-      </section>
-
-      <section class="section2">
-
-         <div class="describ"> 
-            <h1>Conheça as vacinas que já estão sendo aplicadas</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis enim nostrum, quod rem alias voluptas, laudantium pariatur maiores fugit necessitatibus consectetur saepe assumenda quae quibusdam praesentium, impedit cum voluptates sunt.</p>
-         </div><br>
-        
-         <div class="flex">
-         <div id="tabs">
-            <ul>
-               <li><a href="#tabs-1">Oxford-Astra Zeneca</a></li>
-               <li><a href="#tabs-2">Moderna</a></li>
-               <li><a href="#tabs-3">Pfizer-BioNTech</a></li>
-               <li><a href="#tabs-4">Gamaleya (Sputnik V)</a></li>
-               <li><a href="#tabs-5">Sinovac (Coronavac)</a></li>
-            </ul>
-            <div id="tabs-1">
-               <img src="public/assets/img/icons/iconfinder_273_Ensign_Flag_Nation_kingdom_2634450.png" width="50px">
-               <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec
-                  sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
-                  Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula
-                  eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam
-                  molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum.
-                  Phasellus ipsum. Nunc tristique tempus lectus.</p>
-            </div>
-            <div id="tabs-2">
-               <img src="public/assets/img/icons/iconfinder_274_Ensign_Flag_Nation_states_2634451.png" width="50px">
-               <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id
-                  nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
-                  molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula
-                  in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis.
-                  Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat.
-                  Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod
-                  felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
-            </div>
-            <div id="tabs-3">
-               <img src="public/assets/img/icons/iconfinder_274_Ensign_Flag_Nation_states_2634451.png" width="50px">
-               <img src="public/assets/img/icons/germany.png" width="50px">
-               <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
-                  accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
-                  taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque
-                  eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur
-                  lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-               <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
-                  facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.
-                  Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio.
-                  Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat
-                  porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
-                  commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-            </div>
-            <div id="tabs-4">
-               <img src="public/assets/img/icons/iconfinder_210_Ensign_Flag_Nation_russia_2634398.png" width="50px">
-               <p>2 Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
-                  vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class
-                  aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
-                  Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
-                  Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-               <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla
-                  facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti.
-                  Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio.
-                  Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat
-                  porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
-                  commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-            </div>
-            <div id="tabs-5">
-               <img src="public/assets/img/icons/iconfinder_57_Ensign_Flag_Nation_china_2634487.png" width="50px">
-               <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula
-                  accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
-                  taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque
-                  eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur
-                  lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-
+            <div class="demo">
+               <h1 class="title-1">Título</h1>
+               <p class="p-1">Deslize para o lado para navegar</p>
+               <div class="item">
+                  <ul id="content-slider" class="content-slider">
+                      <li>
+                         <a href="#section2"  id="link-ancora"><h3>Vacinação</h3></a>
+                      </li>
+                      <li>
+                        <a href="#section3"  id="link-ancora"><h3>Prevenção</h3></a>
+                      </li>
+                      <li>
+                        <a href="#section4"  id="link-ancora"><h3>Lorem 3</h3></a>
+                      </li>
+                      <li>
+                        <a href="#section5"  id="link-ancora"><h3>Lorem 4</h3></a>
+                      </li>
+                  </ul>
+              </div>
             </div>
          </div>
-      </div>
       </section>
+      
 
-
-      <section class="section3">
-
-         <div class="describ"> 
+      <section id="section2">
+         <div class="describ">
             <h1>Conheça as vacinas que já estão sendo aplicadas</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis enim nostrum, quod rem alias voluptas, laudantium pariatur maiores fugit necessitatibus consectetur saepe assumenda quae quibusdam praesentium, impedit cum voluptates sunt.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis enim nostrum, quod rem alias voluptas, laudantium pariatur maiores fugit necessitatibus consectetur saepe assumenda quae quibusdam praesentium, impedit cum voluptates sunt.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis enim nostrum, quod rem alias voluptas,
+               laudantium pariatur maiores fugit necessitatibus consectetur saepe assumenda quae quibusdam praesentium,
+               impedit cum voluptates sunt.</p>
          </div><br>
-
          <div class="flex">
-         <div id="accordion">
-            <div>
-               <img src="public/assets/img/icons/iconfinder_Covid-19-10_5843323.png" width="100px">
-            </div>
-            <div>
-               <p>
-                  Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                  ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                  amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                  odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-               </p>
-            </div>
-            <div>
-               <img src="public/assets/img/icons/iconfinder_Covid-19-1_5843314.png" width="100px">
-
-            </div>
-            <div>
-               <h1>Use álcool gel</h1>
-               <p>
-                  Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-                  purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-                  velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-                  suscipit faucibus urna.
-               </p>
-            </div>
-
-            <div>
-               <img src="public/assets/img/icons/iconfinder_Covid-19-3_5843316.png" width="100px">
-
-            </div>
-            <div>
-               <h1>Use máscaras</h1>
-               <p>
-                  Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-                  Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-                  ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-                  lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-               </p>
+            <div id="tabs">
                <ul>
-                  <li>List item one</li>
-                  <li>List item two</li>
-                  <li>List item three</li>
+                  <li><a href="#tabs-1">Oxford-Astra Zeneca</a></li>
+                  <li><a href="#tabs-2">Moderna</a></li>
+                  <li><a href="#tabs-3">Pfizer-BioNTech</a></li>
+                  <li><a href="#tabs-4">Gamaleya (Sputnik V)</a></li>
+                  <li><a href="#tabs-5">Sinovac (Coronavac)</a></li>
                </ul>
-            </div>
-
-            <div>
-               <img src="public/assets/img/icons/iconfinder_Covid-19-5_5843318.png" width="100px">
-
-            </div>
-            <div>
-               <h1>Se atente aos sintomas</h1>
-               <p>
-                  Cras dictum. Pellentesque habitant morbi tristique senectus et netus
-                  et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
-                  faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
-                  mauris vel est.
-               </p>
-               <p>
-                  Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
-                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-                  inceptos himenaeos.
-               </p>
+               <div id="tabs-1">
+                  <img src="public/assets/img/icons/iconfinder_273_Ensign_Flag_Nation_kingdom_2634450.png" width="50px">
+                  <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec
+                     sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem.
+                     Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula
+                     eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam
+                     molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum.
+                     Phasellus ipsum. Nunc tristique tempus lectus.</p>
+               </div>
+               <div id="tabs-2">
+                  <img src="public/assets/img/icons/iconfinder_274_Ensign_Flag_Nation_states_2634451.png" width="50px">
+                  <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus
+                     id
+                     nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros
+                     molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed
+                     ligula
+                     in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis.
+                     Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat.
+                     Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod
+                     felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+               </div>
+               <div id="tabs-3">
+                  <img src="public/assets/img/icons/iconfinder_274_Ensign_Flag_Nation_states_2634451.png" width="50px">
+                  <img src="public/assets/img/icons/germany.png" width="50px">
+                  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                     vehicula
+                     accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
+                     taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
+                     Quisque
+                     eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur
+                     lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                  <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus.
+                     Nulla
+                     facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse
+                     potenti.
+                     Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget
+                     odio.
+                     Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat
+                     porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
+                     commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+                  </p>
+               </div>
+               <div id="tabs-4">
+                  <img src="public/assets/img/icons/iconfinder_210_Ensign_Flag_Nation_russia_2634398.png" width="50px">
+                  <p>2 Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                     vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante.
+                     Class
+                     aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce
+                     sodales.
+                     Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium.
+                     Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                  <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus.
+                     Nulla
+                     facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse
+                     potenti.
+                     Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget
+                     odio.
+                     Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat
+                     porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
+                     commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.
+                  </p>
+               </div>
+               <div id="tabs-5">
+                  <img src="public/assets/img/icons/iconfinder_57_Ensign_Flag_Nation_china_2634487.png" width="50px">
+                  <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                     vehicula
+                     accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent
+                     taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales.
+                     Quisque
+                     eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur
+                     lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+               </div>
             </div>
          </div>
-      </div>
       </section>
 
-      <section class="section4">
+      <section id="section3">
 
-         <div class="content-4">
+         <div class="describ">
+            <h1>Conheça as vacinas que já estão sendo aplicadas</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis enim nostrum, quod rem alias voluptas,
+               laudantium pariatur maiores fugit necessitatibus consectetur saepe assumenda quae quibusdam praesentium,
+               impedit cum voluptates sunt.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis enim nostrum, quod rem alias voluptas,
+               laudantium pariatur maiores fugit necessitatibus consectetur saepe assumenda quae quibusdam praesentium,
+               impedit cum voluptates sunt.</p>
+         </div><br>
+         <div class="flex">
+            <div id="accordion">
+               <div>
+                  <img src="public/assets/img/icons/iconfinder_Covid-19-10_5843323.png" width="100px">
+               </div>
+               <div>
+                  <p>
+                     Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                     ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                     amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                     odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                  </p>
+               </div>
+               <div>
+                  <img src="public/assets/img/icons/iconfinder_Covid-19-1_5843314.png" width="100px">
+               </div>
+               <div>
+                  <h1>Use álcool gel</h1>
+                  <p>
+                     Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                     purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                     velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                     suscipit faucibus urna.
+                  </p>
+               </div>
+               <div>
+                  <img src="public/assets/img/icons/iconfinder_Covid-19-3_5843316.png" width="100px">
+               </div>
+               <div>
+                  <h1>Use máscaras</h1>
+                  <p>
+                     Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                     Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                     ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                     lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                  </p>
+                  <ul>
+                     <li>List item one</li>
+                     <li>List item two</li>
+                     <li>List item three</li>
+                  </ul>
+               </div>
 
-         <div class="title-4">
-            <h1>Title</h1>
+               <div>
+                  <img src="public/assets/img/icons/iconfinder_Covid-19-5_5843318.png" width="100px">
+               </div>
+               <div>
+                  <h1>Se atente aos sintomas</h1>
+                  <p>
+                     Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                     et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                     faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                     mauris vel est.
+                  </p>
+                  <p>
+                     Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                     Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                     inceptos himenaeos.
+                  </p>
+               </div>
+            </div>
          </div>
-         <div class="parag-4">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione rem illo repellendus tempore culpa
-               veniam sapiente quas ut a eos debitis, natus ipsam ea expedita eaque amet reprehenderit blanditiis
-               suscipit?</p>
+      </section>
+
+      <section id="section4">
+         <div id="content-4">
+            <div class="title-4">
+               <h1>Title</h1>
+            </div>
+            <div class="parag-4">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione rem illo repellendus tempore culpa
+                  veniam sapiente quas ut a eos debitis, natus ipsam ea expedita eaque amet reprehenderit blanditiis
+                  suscipit?</p>
+            </div>
          </div>
-
-      </div>
-
       </section><br><br>
-
    </div>
    <!--END CONTAINER-->
 
@@ -254,7 +278,6 @@
       </nav>
    </footer>
    <!-- 
-    https://www.dafont.com/pt/coronaviral.font?text=Equipe&psize=l
     <iframe src="https://www.bing.com/covid?ref=embedding" style="width: 100%; height: 500px; max-width: 1272px; border: none;"></iframe> -->
 </body>
 

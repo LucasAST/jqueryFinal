@@ -10,7 +10,7 @@ p {
 
 @font-face {
    font-family: Font;
-   src: url(public/assets/fonts/02_APompadourTextSample.otf);
+   src: url(../assets/fonts/02_APompadourTextSample.otf);
 }
 
 #nav-link {
@@ -61,6 +61,26 @@ p {
    padding: 10px;
 }
 
+/*ANCORA*/
+#menu-aside{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(37, 41, 255);
+    position: fixed;
+    z-index: 3;
+    border-radius: 20px 0px 0px 20px;
+    right: 0;
+}
+.aside{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   font-size: 20px;
+}
+.aside a{
+text-decoration: none;
+color: floralwhite;
+}
 /*  FOOTER */
 .rodape {
    background-color: rgb(37, 41, 255);
@@ -93,17 +113,64 @@ p {
 }
 
 /* SECTION */
-.section1,
-.section2,
-.section3,
-.section4,
-.section5 {
-   width: 90%;
+
+.section2, .section3{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: 100%;
    height: auto;
+   text-align: center;
+   margin-top: 300px;
+  
+   background-color: #fff;
+   border-radius: 10px;
+}
+.section4{
+   padding-top: 10px;
+   padding-bottom: 50px;
+   width: 100%;
+   height: auto;
+   text-align: center;
+   margin-top: 300px;
+   justify-content: center;
    display: flex;
+   justify-content: center;
+   background-color: #fff;
+   border-radius: 10px;
+}
+
+.section1{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: 100%;
+   height: auto;
+   text-align: center;
    margin-top: 100px;
+}
+.flex{
+   display: flex;
    justify-content: center;
 }
+#btn-ancora{
+   background-color: transparent;
+   border: none;
+   font-size: 40px;
+   padding-left: 100px;
+   margin-right: 100px;
+}
+.title-1{
+   font-size: 60px;
+   color: #fff;
+}
+article a{
+   text-decoration: none;
+   color: #fff;
+}
+
+#link-ancora:hover{
+   color:rgb(37, 41, 255);
+}
+
 .container{
    width: 100%;
    height: auto;
@@ -111,12 +178,49 @@ p {
    flex-direction: column;
    align-items: center;
    padding-bottom: 50px;
+   position: absolute;
+   font-family: Font;
+   background-image: url(../assets/img/banner.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   
 }
 
-/*ANCORA*/
-#menu-ancora{
-    width: 200px;
-    height: auto;
-    background-color: #000000;
-    position: fixed;
+
+/*ACCORDION*/
+#accordion{
+   width: 700px;
+   border-radius: 10px;
 }
+/*TABS*/
+#tabs {
+   width: 1000px;
+   height: auto;
+   border-radius: 10px;
+   
+}
+#tabs h1{
+   text-align: center;
+}
+/*SECTION 4*/
+.title-4{
+   width: 100%;
+   background-color: rgb(37, 41, 255);
+   color: #fff;
+   border-radius: 10px;
+   padding: 10px;
+}
+.parag-4{
+   width: 100%;
+   background-color: #fff;
+   color: #121212;
+   border-radius: 10px;
+   font-size: 30px;
+   padding: 10px;
+}
+
+.content-4{
+   width: 80%;
+}
+

@@ -89,6 +89,7 @@ color: floralwhite;
    justify-content: center;
    align-items: center;
    padding: 20px;
+   bottom: 0;
 }
 
 .social {
@@ -178,7 +179,7 @@ article a{
    flex-direction: column;
    align-items: center;
    padding-bottom: 50px;
-   position: absolute;
+   
    font-family: Font;
    background-image: url(../assets/img/banner.jpg);
    background-repeat: no-repeat;

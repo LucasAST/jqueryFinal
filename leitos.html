@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <link rel="stylesheet" href="css/jquery-ui.css">
+
+
+  <!-- <link rel="stylesheet" href="css/carousel.css">-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+   integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+   integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+   <link rel="stylesheet" href="./css/common.min.css">
+
+   <script src="../public/js/jquery-3.6.0.min.js"></script>
+   <script src="../public/js/index.js"></script>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="../public/css/principal.css">
+   
+</head>
+
+<body>
+
+   <header class="cabecalho">
+      <a id="nav-link-t" href="#">Lorem</a>
+      <nav class="menu">
+         <ul>
+            <li><a id="nav-link" href="#">Lorem</a></li>
+            <li><a id="nav-link" href="#">Lorem</a></li>
+            <li><a id="nav-link" href="#">Lorem</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <div id="menu-aside">
+      <div class="btns">
+         <img src="../public/assets/img/icons/7694034-128.png" width="60px" id="upper">
+         <img src="../public/assets/img/icons/7694033-128.png" width="60px" id="decrease">
+      </div>
+      <div class="clock">
+         <input type='text' value='00:00:00' id='relogio' readonly size='6'
+            style="font-size: 200%; color:#fff; background-color: transparent; border: none;" />
+         <script type="text/javascript" src="../public/js/clock.js"></script>
+      </div>
+      <div class="date">
+         <span id="data" disabled='disabled' style="color: #fff;"> </span>
+         
+      </div>
+   </div>
+
+   <div class="container">
+      <section class="section1">
+         <img src="" alt="">
+         <div id="titulo-sp">
+            <h1>Estado de São Paulo</h1>
+         </div>
+         
+         <div id="aviso-fase">
+            <p>
+               Fase Vermelha
+            </p>
+         </div>
+        
+      </section>
+
+      <section class="section3">
+         <section class="jd-slider slider2">
+            <h2></h2>
+            <div class="slide-inner">
+                <ul class="slide-area">
+                    <li>
+                        <a href="#"><img src="img/oebçDFEW.PNG" alt="" style="width: 70%; margin: 0 auto;"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/novoCasos.PNG" alt="" style="width: 70%; margin: 0 auto;"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/novasInter.PNG" alt="" style="width: 70%; margin: 0 auto;"></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="img/tab.PNG" alt="" style="width: 70%; margin: 0 auto;"></a>
+                    </li>
+                    <li>
+                     <a href="#"><img src="img/den.PNG" alt="" style="width: 70%; margin: 0 auto;"></a>
+                 </li>
+                </ul>
+                <a class="prev" href="#">
+                    <i class="fas fa-angle-left fa-2x"></i>
+                </a>
+                <a class="next" href="#">
+                    <i class="fas fa-angle-right fa-2x"></i>
+                </a>
+            </div>
+            <div class="controller">
+                <a class="auto" href="#">
+                    <i class="fas fa-play fa-xs"></i>
+                    <i class="fas fa-pause fa-xs"></i>
+                </a>
+                <div class="indicate-area"></div>
+            </div>
+        </section>
+      </section>
+
+      <div title="Dialog Title 1" id="txt_1"  class="dialog">
+         <p>Acesso Administrativo</p>
+         <p>Janela de Atualização do Sistema</p>
+         <form action="">
+             <label for="UTI">Taxa de Ocupação da UTI</label><br>
+             <input type="text" id="uti"><br>
+         
+             <label for="Enfermaria">Taxa de Ocupação da Enfermaria</label><br>
+             <input type="text" id="enfermaria"><br>
+         </form>
+         
+      </div>
+          
+
+      <section id="lk_1" class="section2 dialog_link ui-corner-all">
+         <div id="leitos">
+
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+    
+         </div>       
+
+      </section>    
+
+      <section class="section4"> 
+         <div id="contain-btn-dados">
+            <button id='btn-dados'>Leitos COVID-19 ocupados por unidade hospitalar pública no Estado de São Paulo</button>
+        </div>
+        <div id='ajuste' class="ajuste">
+            <div class='tableauPlaceholder' id='viz1617059212927' style='position: relative'>
+            <noscript>
+                <a href='https:&#47;&#47;www.saopaulo.sp.gov.br&#47;'>
+                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;D4&#47;D4Y9N7J57&#47;1_rss.png' style='border: none' />
+                </a>
+            </noscript>
+            <object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;D4Y9N7J57' /> 
+                <param name='toolbar' value='yes' />
+                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;D4&#47;D4Y9N7J57&#47;1.png' />
+                <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                <param name='display_count' value='yes' /><param name='tabs' value='no' /><param name='language' value='pt' /></object></div>  
+                <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1617059212927');             
+                    var vizElement = divElement.getElementsByTagName('object')[0];                 
+                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1280px';vizElement.style.height='927px';}
+                    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1280px';vizElement.style.height='927px';}
+                    else { vizElement.style.width='100%';vizElement.style.height='727px';}                 
+                    var scriptElement = document.createElement('script');                 
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';           
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);          
+                </script>
+        </div> 
+      </section>
+
+      <section class="section5"> 
+         <h1>Restrições da Fase</h1>
+
+         
+         <div id="accordion">
+            <h3>Shopping center, galerias e estabelecimentos congêneres</h3>
+            <div id='ac1'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+            
+            <h3>Comércio</h3>
+            <div  id='ac2'>Phasellus mattis tincidunt nibh.</div>
+            
+            <h3>Comércio Varejista de Mercadorias: Lojas de Conveniência</h3>
+            <div  id='ac3'>Nam dui erat, auctor a, dignissim quis.</div>
+            
+            <h3>Serviços</h3>
+            <div id='ac5'>Phasellus mattis tincidunt nibh.</div>
+            
+            <h3>Consumo Local (Restaurantes e Similares)</h3>
+            <div id='ac6'>Nam dui erat, auctor a, dignissim quis.</div>
+           
+            <h3>Consumo Local (Bares)</h3>
+            <div  id='ac7'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+            
+            <h3>Salões de Beleza e Barbearias</h3>
+            <div id='ac8'>Phasellus mattis tincidunt nibh.</div>
+            
+            <h3>Academia de Esportes de Todas as Modalidades e Centros de Ginástica</h3>
+            <div id='ac9'>Nam dui erat, auctor a, dignissim quis.</div>
+
+            <h3>Eventos, Conveções e Atividades Culturais</h3>
+            <div id='ac10'>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+            
+            <h3>Demais Atividades que Geram Aglomeração</h3>
+            <div id='ac11'>Demais Atividades que Geram Aglomeração</div>
+
+         </div>
+      </section>
+   </div>
+
+   <footer class="rodape">
+      <nav class="social">
+         <ul>
+            <li><a class="social-link" href="#"><img src="../public/assets/img/icons/3225183-64.png"></a></li>
+            <li><a class="social-link" href="#"><img src="../public/assets/img/icons/3225191-64.png"></a></li>
+            <li><a class="social-link" href="#"><img src="../public/assets/img/icons/3225194-64.png"></a></li>
+         </ul>
+      </nav>
+   </footer>
+   <!-- 
+    https://www.dafont.com/pt/coronaviral.font?text=Equipe&psize=l
+    <iframe src="https://www.bing.com/covid?ref=embedding" style="width: 100%; height: 500px; max-width: 1272px; border: none;"></iframe> -->
+
+
+    
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      
+      <script src="js/jquery.js"></script>
+
+
+      <script src="js/script.js"></script>
+      <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+      <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+      <script src="js/chartJsANDslider.js"></script>
+      <script src="./js/jquery.jdSlider-latest.min.js"></script>
+      <script src="js/jquery-ui.js"></script> 
+      <script type="text/javascript" src="../public/js/date.js"></script>
+      
+
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/redmond/jquery-ui.css">
+ 
+
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+   </body>
+
+</html>

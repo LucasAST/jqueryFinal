@@ -19,31 +19,7 @@
    <!-- CSS -->
    <link rel="stylesheet" href="public/css/principal.css">
    <link rel="stylesheet" href="public/css/lightslider.css">
-
-<style>
-   ul{
-     list-style: none outside none;
-      padding-left: 0;
-        margin: 0;
-  }
-    .demo .item{
-        margin-bottom: 60px;
-    }
-  .content-slider li{
-      background-color: transparent;
-      text-align: center;
-      color: #FFF;
-      font-size: 50px;
-  }
-  .content-slider h3 {
-      margin: 0;
-      padding: 70px 0;
-  }
-  .demo{
-     width: 1500px;
-  }
-</style>
-
+   <link rel="stylesheet" href="public/css/slider.css">
 </head>
 
 <body>
@@ -58,8 +34,24 @@
       </nav>
    </header>
    </div>
-   <div class="container">
 
+   <div id="menu-aside">
+      <div class="btns">
+         <img src="public/assets/img/icons/upper.png" width="60px" id="upper">
+      </div>
+      <div class="clock">
+         <input type='text' value='00:00:00' id='relogio' readonly size='6'
+            style="font-size: 200%; color:#fff; background-color: transparent; border: none;" />
+         <script type="text/javascript" src="public/js/clock.js"></script>
+      </div>
+      <div class="date">
+         <span id="data" disabled='disabled' style="color: #fff;"> </span>
+
+         <script type="text/javascript" src="public/js/date.js"></script>
+      </div>
+   </div>
+
+   <div class="container">
       <section id="section1">
          <div class="flex">
             <div class="demo">
@@ -67,24 +59,31 @@
                <p class="p-1">Deslize para o lado para navegar</p>
                <div class="item">
                   <ul id="content-slider" class="content-slider">
-                      <li>
-                         <a href="#section2"  id="link-ancora"><h3>Vacinação</h3></a>
-                      </li>
-                      <li>
-                        <a href="#section3"  id="link-ancora"><h3>Prevenção</h3></a>
-                      </li>
-                      <li>
-                        <a href="#section4"  id="link-ancora"><h3>Lorem 3</h3></a>
-                      </li>
-                      <li>
-                        <a href="#section5"  id="link-ancora"><h3>Lorem 4</h3></a>
-                      </li>
+                     <li>
+                        <a href="#section2" id="link-ancora">
+                           <h3>Vacinação</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#section3" id="link-ancora">
+                           <h3>Prevenção</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#section4" id="link-ancora">
+                           <h3>Lorem 3</h3>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#section5" id="link-ancora">
+                           <h3>Rastreador</h3>
+                        </a>
+                     </li>
                   </ul>
-              </div>
+               </div>
             </div>
          </div>
       </section>
-      
 
       <section id="section2">
          <div class="describ">
@@ -179,9 +178,8 @@
       </section>
 
       <section id="section3">
-
          <div class="describ">
-            <h1>Conheça as vacinas que já estão sendo aplicadas</h1>
+            <h1>Meios de se previnir do virús</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis enim nostrum, quod rem alias voluptas,
                laudantium pariatur maiores fugit necessitatibus consectetur saepe assumenda quae quibusdam praesentium,
                impedit cum voluptates sunt.</p>
@@ -257,11 +255,27 @@
          <div id="content-4">
             <div class="title-4">
                <h1>Title</h1>
+               <p>Clique para exibir</p>
             </div>
-            <div class="parag-4">
+            <div id="parag-4">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione rem illo repellendus tempore culpa
                   veniam sapiente quas ut a eos debitis, natus ipsam ea expedita eaque amet reprehenderit blanditiis
                   suscipit?</p>
+            </div>
+         </div>
+      </section><br><br>
+
+      <section id="section5">
+         <div id="content-4">
+            <div class="title-5">
+               <h1>Rastreador Bing</h1>
+               <p>Clique para exibir</p>
+            </div>
+            <div id="bing">
+
+               <iframe src="https://www.bing.com/covid?ref=embedding"
+                  style="width: 100%; height: 500px; max-width: 1272px; border: none;"></iframe>
+
             </div>
          </div>
       </section><br><br>
@@ -278,7 +292,7 @@
       </nav>
    </footer>
    <!-- 
-    <iframe src="https://www.bing.com/covid?ref=embedding" style="width: 100%; height: 500px; max-width: 1272px; border: none;"></iframe> -->
+     -->
 </body>
 
 </html>

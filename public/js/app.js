@@ -26,4 +26,19 @@
            }  
        });
  });
-  
+//Toggle
+$(document).ready(function(){
+  $('#parag-4 p').hide();
+  $('#bing').hide();
+
+  $('.title-4').click(function(){
+    $('#parag-4 p').slideToggle()
+})
+
+  $('.title-5').click(function(){
+    $('#bing').slideToggle()
+})
+
+})
+
+

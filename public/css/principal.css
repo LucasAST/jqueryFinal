@@ -61,16 +61,35 @@ p {
     border-radius: 20px 0px 0px 20px;
     right: 0;
 }
-.aside{
+.clock{
    display: flex;
    justify-content: center;
    margin-top: 10px;
    font-size: 20px;
 }
-.aside a{
-text-decoration: none;
-color: floralwhite;
+.btns{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px; 
 }
+#upper{
+   margin-left: 10px;
+}
+.date{
+   display: flex;
+   justify-content: center;
+}
+#relogio{
+   margin-left: 15px;
+}
+.date{
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: 7px;
+  padding-top: 15px;
+}
+
 /*  FOOTER */
 .rodape {
    background-color: rgb(37, 41, 255);
@@ -109,7 +128,7 @@ color: floralwhite;
    background-color: #fff;
    border-radius: 10px;
 }
-#section4{
+#section4, #section5{
    padding-top: 10px;
    padding-bottom: 50px;
    width: 90%;
@@ -135,7 +154,7 @@ color: floralwhite;
    justify-content: center;
 }
 .title-1{
-   font-size: 80px;
+   font-size: 120px;
    color: #fff;
 }
 .p-1{
@@ -177,19 +196,18 @@ a{
    text-align: center;
 }
 /*SECTION 4*/
-.title-4{
+.title-4, .title-5{
    width: 100%;
    background-color: rgb(37, 41, 255);
    color: #fff;
    border-radius: 10px;
    padding: 10px;
 }
-.parag-4{
+#parag-4{
    width: 100%;
-   background-color: #fff;
    color: #121212;
    border-radius: 10px;
-   font-size: 30px;
+   font-size: 20px;
    padding: 10px;
 }
 #content-4{

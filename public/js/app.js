@@ -41,14 +41,11 @@ $(document).ready(function(){
 
 //Acessibilidade
 $('#upper').click(function(){
-  $('.describ, #tabs').css("font-size", "40px");
-  $('#tabs, #tabs p').css("font-size", "30px");
-  $('#accordion').css("font-size", "30px");
-  $('#parag-4').css("font-size", "30px");
-  $('#content-4').css("font-size", "30px");
-  $('.title-5').css("font-size", "30px");
+  $('.describ, #tabs, #accordion, #content-4, .title-5, #parag-4 p').addClass('acssOn');
 })
-
+$('#decrease').click(function(){
+  $('.describ, #tabs, #accordion, #content-4, .title-5, #parag-4 p').removeClass('acssOn');
+})
 });
 
 

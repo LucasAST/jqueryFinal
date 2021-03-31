@@ -33,12 +33,22 @@ $(document).ready(function(){
 
   $('.title-4').click(function(){
     $('#parag-4 p').slideToggle()
-})
+});
 
   $('.title-5').click(function(){
     $('#bing').slideToggle()
+});
+
+//Acessibilidade
+$('#upper').click(function(){
+  $('.describ, #tabs').css("font-size", "40px");
+  $('#tabs, #tabs p').css("font-size", "30px");
+  $('#accordion').css("font-size", "30px");
+  $('#parag-4').css("font-size", "30px");
+  $('#content-4').css("font-size", "30px");
+  $('.title-5').css("font-size", "30px");
 })
 
-})
+});
 
 

@@ -1,0 +1,220 @@
+body,
+ul,
+li,
+p {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   font-family: Font;
+}
+@font-face {
+   font-family: Font;
+   src: url(../assets/fonts/02_APompadourTextSample.otf);
+}
+#nav-link {
+   text-decoration: none;
+   color: white;
+   font-size: 30px;
+}
+#nav-link-t {
+   text-decoration: none;
+   color: white;
+   font-size: 40px;
+}
+#nav-img {
+   max-width: 100%;
+   display: block;
+}
+.cabecalho {
+   background-color: rgb(37, 41, 255);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px;
+}
+.menu {
+   display: flex;
+}
+.menu li {
+   display: inline-block;
+   margin-left: 10px;
+}
+#nav-link:hover {
+   color: #000000;
+}
+#nav-link-t:hover {
+   color: #000000;
+}
+.menu li a {
+   display: block;
+   padding: 10px;
+}
+
+/*ANCORA*/
+#menu-aside{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(37, 41, 255);
+    position: fixed;
+    z-index: 3;
+    border-radius: 20px 0px 0px 20px;
+    right: 0;
+}
+.clock{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   font-size: 20px;
+}
+.btns{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px; 
+}
+#upper{
+   margin-left: 10px;
+}
+.date{
+   display: flex;
+   justify-content: center;
+}
+#relogio{
+   margin-left: 15px;
+}
+.date{
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  margin-left: 7px;
+  padding-top: 15px;
+}
+
+/*  FOOTER */
+.rodape {
+   background-color: rgb(37, 41, 255);
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   bottom: 0;
+}
+.social {
+   display: block;
+}
+.social li a {
+   display: block;
+   padding: 10px;
+}
+.social li {
+   display: inline-block;
+   margin-left: 10px;
+}
+.social-link:hover {
+   display: flex;
+   z-index: 1;
+   transform: scale(1.3);
+   transition: all 2s;
+}
+/* SECTION */
+#section2, #section3{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: 90%;
+   height: auto;
+   text-align: center;
+   margin-top: 300px;
+   background-color: #fff;
+   border-radius: 10px;
+}
+#section4, #section5{
+   padding-top: 10px;
+   padding-bottom: 50px;
+   width: 90%;
+   height: auto;
+   text-align: center;
+   margin-top: 300px;
+   justify-content: center;
+   display: flex;
+   justify-content: center;
+   background-color: #fff;
+   border-radius: 10px;
+}
+#section1{
+   padding-top: 50px;
+   padding-bottom: 50px;
+   width: 100%;
+   height: auto;
+   text-align: center;
+   margin-top: 100px;
+}
+.flex{
+   display: flex;
+   justify-content: center;
+}
+.title-1{
+   font-size: 120px;
+   color: #fff;
+}
+.p-1{
+   font-size: 30px;
+   color: #fff;
+}
+a{
+   text-decoration: none;
+   color: #fff;
+}
+#link-ancora:hover{
+   color:rgb(37, 41, 255);
+}
+
+.container{
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 50px;
+   font-family: Font;
+   background-image: url(../assets/img/banner.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+/*ACCORDION*/
+#accordion{
+   width: 700px;
+   border-radius: 10px;
+}
+/*TABS*/
+#tabs {
+   width: 1000px;
+   height: auto;
+   border-radius: 10px; 
+}
+#tabs h1{
+   text-align: center;
+}
+/*SECTION 4*/
+.title-4, .title-5{
+   width: 100%;
+   background-color: rgb(37, 41, 255);
+   color: #fff;
+   border-radius: 10px;
+   padding: 10px;
+}
+#parag-4{
+   width: 100%;
+   color: #121212;
+   border-radius: 10px;
+   font-size: 20px;
+   padding: 10px;
+}
+#content-4{
+   width: 80%;
+}
+
+.acssOn{
+   font-size: 30px;
+}

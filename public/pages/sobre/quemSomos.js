@@ -1,10 +1,10 @@
 $(document).ready(function(){ 
   $('#upper').click(function(){
-    $('section').addClass('acssOn');
+    $('section, p').addClass('acssOn');
   })
 
   $('#decrease').click(function(){
-    $('section').removeClass('acssOn');
+    $('section, p').removeClass('acssOn');
   })
     /* função jquery usando SlideToggle */ 
     $('.txtProjetos').css('display', 'none');

@@ -1,15 +1,18 @@
 
 
 $(document).ready(function () { 
-  //Acessibilidade
-  $('#upper').click(function(){
-    $('label, input').addClass('acssOn')
-    ;
-  })
-  $('#decrease').click(function(){
-    $('label, input').removeClass('acssOn');
-  })
    
+
+    $('#upper').click(function(){
+        $('label').addClass('acssOn');
+       
+      });
+    
+      $('#decrease').click(function(){
+        $('label').removeClass('acssOn');
+      });
+        
+
         /*Validação do Nome */        
        function verificaNome() {
             let nome = $("#nome").val()        
@@ -374,7 +377,7 @@ $(document).ready(function () {
                
       } );
    
-    $('#button').hide();
+   $('#button').hide();
 
 }) //ready
 
@@ -438,4 +441,33 @@ function VerificaCPF() {
     }
     return true;
 }
+
+
+
+
+
+/*Inicio da Caixa de Texto*/
+/*function capturando() {
+    var nome = window.document.getElementById("nome").value;
+    var email = window.document.getElementById("email").value;
+    var sexo = window.document.getElementById("sexo").value;
+    var cpf = window.document.getElementById("cpf").value;
+    var mes = window.document.getElementById("mes").value;
+
+    var idade = window.document.getElementById("ano").value;
+    var resIdade = 2021 - parseInt(idade)
+    if (mes > 3) {
+        resIdade--
+    } else {
+        resIdade = resIdade;
+    }
+
+    var frase = window.document.getElementById("frase");
+
+    frase.innerHTML = `Nome:  <strong>${nome.toUpperCase()}</strong> <br/> seu login é <strong>${email}</strong>, você tem <strong>${resIdade}</strong>
+    anos de idade, se define como uma pessoa  do sexo <strong>${sexo}</strong> e pode usar <strong>${cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/, "$1.$2.$3-$4")} </strong > como senha.`
+
+}*/
+
+
 

@@ -16,6 +16,9 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="../../css/principal.css">
+
+
+
 </head>
 
 <body>
@@ -26,7 +29,7 @@
         <nav class="menu">
             <ul>
                 <li><a id="nav-link" href="../sobre/quemSomos.html">Sobre nós</a></li>
-                <li><a id="nav-link" href="../leitos/leitos.html">Entenda as fases </a></li>
+                <li><a id="nav-link" href="../leitos/leitos.html">Entenda as fases</a></li>
                 <li><a id="nav-link" href="#">Cadastro</a></li>
             </ul>
         </nav>
@@ -50,200 +53,169 @@
     </div>
 
     <div class="conteiner">
-        
         <article>
-            <h1 id="title5">Cadastro De Vacinação</h1>
+            <h1 id="color">Cadastro De Vacinação</h1>
         </article>
         <main>
             <form name="formCadastro" method="post" id="formulario">
-                <table>
-                    <!--Nome Completo-->
-                    <tr>
-                        <td>
-                            <label id="labelNom">Nome Completo</label>
-                            <label id="labelEtnia">Se Considera</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="stylo"
-                                style="text-transform: uppercase" />
 
-                            <select name="etnia" id="etnia">
-                                <option value="Branco"> Branco </option>
-                                <option value="Caboclo"> Caboclo </option>
-                                <option value="Cafuzo"> Cafuzo </option>
-                                <option value="Indígena"> Indígena </option>
-                                <option value="Mulato"> Mulato </option>
-                                <option value="Negro"> Negro </option>
-                                <option value="Pardo"> Pardo </option>
-                                <option value="Não Informado" selected>Não Informado</option>
+                <div id="adiv">
+                    <label id="labelNom">Nome Completo</label><br>
+                    <input type="text" name="nome" id="nome" placeholder="Nome Completo" class="stylo"
+                        style="text-transform: uppercase" /><br>
 
-                            </select>
-                        </td>
-                    </tr>
-                    <!--abel Data de Nascimento e Label Telefone-->
-                    <tr>
-                        <td> <label id="labelNasc">Data de Nascimento</label>
-                            <label id="labelTel">Telefone</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!--Input Dia de Nascimento-->
-                            <input type="text" name="nascimento" id="nascimento">
+                    <label id="labelEtnia">Se Considera</label><br>
 
-                            <!--Input Telefone-->
-                            <input type="text" name="tel" id="tel" placeholder="Telefone " id="dados" maxlength="11"
-                                minlength="11" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})" />
-                        </td>
-                    </tr>
+
+
+                    <select name="etnia" id="etnia">
+                        <option value="Branco"> Branco </option>
+                        <option value="Caboclo"> Caboclo </option>
+                        <option value="Cafuzo"> Cafuzo </option>
+                        <option value="Indígena"> Indígena </option>
+                        <option value="Mulato"> Mulato </option>
+                        <option value="Negro"> Negro </option>
+                        <option value="Pardo"> Pardo </option>
+                        <option value="Não Informado" selected>Não Informado</option>
+
+                    </select><br>
+
+                    <label id="labelNasc">Data de Nascimento</label><br>
+                    <input type="text" name="nascimento" id="nascimento"><br>
+
+                    <label id="labelTel">Telefone</label><br>
+                    <input type="text" name="tel" id="tel" placeholder="Telefone " id="dados" maxlength="11"
+                        minlength="11"  /><br>
+                    <!--Input Dia de Nascimento-->
+
+
+                    <!--Input Telefone-->
+
+
                     <!--Label Sexo, Label Gestante e Label CPF-->
-                    <tr>
-                        <td> <label id="labelSex">Gênero</label>
-                            <label id="labelGest" class="gestante">Gestante?</label>
-                            <label id="labelCpf">CPF</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!--Select Sexo-->
-                            <select name="sexo" id="sexo">
-                                <option value="Masculino"> Masculino </option>
-                                <option value="Feminino"> Feminino </option>
-                                <option value="Não Informado"> Não Informado </option>
-                            </select>
+                    <label id="labelSex">Gênero</label><br>
+                    <select name="sexo" id="sexo">
+                        <option value="Masculino"> Masculino </option>
+                        <option value="Feminino"> Feminino </option>
+                        <option value="Não Informado"> Não Informado </option>
+                    </select><br>
 
-                            <!--Input Gestante?-->
-                            <select name="gestante" id="gestante" class="gestante" disabled>
-                                <option value="Sim" selected> Sim </option>
-                                <option value="Não"> Não </option>
+                    <label id="labelGest" class="gestante">Gestante?</label><br>
+                    <select name="gestante" id="gestante" class="gestante" disabled>
+                        <option value="Sim" selected> Sim </option>
+                        <option value="Não"> Não </option>
+                    </select><br>
 
-                                <!--Input CPF-->
-                                <input type="text" name="cpf" id="cpf" placeholder="xxxxxxxxxxx" onblur="VerificaCPF()"
-                                    class="stylo" />
-                        </td>
-                    </tr>
-
-                    <!--Label Profissão e Outros-->
-                    <tr>
-                        <td>
-                            <label id="labelProf">Profissão</label>
-                            <label id="labelOut" class="outraProf" id="outro">Outros</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <!--Select Profissão-->
-                            <select name="profissao" id="profissao" id="profissao">
-                                <option value="Saúde"> Saúde </option>
-                                <option value="Educação"> Educação </option>
-                                <option value="Militar"> Militar </option>
-                                <option value="Caminhoneiro">Caminhoneiro</option>
-                                <option value="Motorista">Motorista (Coletivo)</option>
-                                <option value="Trabalhador Ferrovário">Ferrovário(Coletivo)</option>
-                                <option value="Trabalhador Transporte Aéreo">Transporte Aéreo</option>
-                                <option value="Trabalhador Portuários">Trabalhador Portuário</option>
-                                <option value="Trabalhador Sistema Prisional">Sistema Prisional</option>
-                                <option value="Outros">Outros</option>
-                            </select>
-
-                            <!--Input Outros-->
-                            <input type="text" name="outros" id="outrosProf" class="outraProf" placeholder="Profissão"
-                                onblur="inputProfissao()" disabled />
-                        </td>
-                    </tr>
+                    <label id="labelCpf">CPF</label><br>
+                    <input type="text" name="cpf" id="cpf" placeholder="xxxxxxxxxxx" onblur="VerificaCPF()"
+                        class="stylo" /><br>
 
 
-                    <!--Corbidade, Peso e Altura-->
-                    <tr>
-                        <td> <label id="labelComor">Comorbidade</label>
-                            <label id="labelPeso">Peso (Kg)</label>
-                            <label id="labelAlt">Altura (m)</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select name="comorbidade" id="comorbidade">
-                                <option value="Nenhuma" selected>Nenhuma</option>
-                                <option value="Hipertensão">Hipertensão Grave</option>
-                                <option value="Diabetes">Diabetes</option>
-                                <option value="Doença Pulmonar">Doença Pulmonar Crônica</option>
-                                <option value="Doença Renal">Doença Renal</option>
-                                <option value="Doença Cardiovascular">Doença Cardiovascular</option>
-                                <option value="Doença Cerebrovascular">Doença Cerebrovascular</option>
-                                <option value="Transplantado">Transplantado de Órgãos Sólidos</option>
-                                <option value="CA">CA</option>
-                                <option value="Obesidade Mórbida "> Obesidade Mórbida</option>
-                                <option value="Anemia Falciforme">Anemia Falciforme</option>
-                                <option value="Deficiência Física">Deficiência Permanente Severa</option>
-                            </select>
+                    <label id="labelProf">Profissão</label><br>
 
-                            <input type="text" name="peso" id="peso" placeholder="Peso " maxlength="3" minlength="2"
-                                onchange="verificaPeso()" />
 
-                            <input type="text" name="altura" id="altura" placeholder="Altura " maxlength="4"
-                                minlength="4" onchange="verificaAltura()" />
-                        </td>
-                    </tr>
+                    <select name="profissao" id="profissao" id="profissao">
+                        <option value="Saúde"> Saúde </option>
+                        <option value="Educação"> Educação </option>
+                        <option value="Militar"> Militar </option>
+                        <option value="Caminhoneiro">Caminhoneiro</option>
+                        <option value="Motorista">Motorista (Coletivo)</option>
+                        <option value="Trabalhador Ferrovário">Ferrovário(Coletivo)</option>
+                        <option value="Trabalhador Transporte Aéreo">Transporte Aéreo</option>
+                        <option value="Trabalhador Portuários">Trabalhador Portuário</option>
+                        <option value="Trabalhador Sistema Prisional">Sistema Prisional</option>
+                        <option value="Outros">Outros</option>
+                    </select><br>
+                    <label id="labelOut" class="outraProf" id="outro">Outros</label><br>
 
-                    <tr>
-                        <td>
-                            <label id="labelSus">Carteirinha do SUS</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" name="sus" id="sus" placeholder="Penas os Números " maxlength="15"
-                                minlength="15" onchange="verificaCarteirinha()" />
-                        </td>
-                    </tr>
+                    <input type="text" name="outros" id="outrosProf" class="outraProf" placeholder="Profissão"
+                        onblur="inputProfissao()" disabled /><br>
 
-                    <tr>
-                        <td>
-                            <label id="labelVac">Quais vacinas já Tomou:</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="vacLinha1">
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Sarampo</label>
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Hepatite B</label>
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Tríplice Viral (SRC)</label>
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Dupla Adulto (dt)</label>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td id="vacLinha2">
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Febre Amarela</label>
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Influenza (gripe)</label>
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Pneumococo</label>
-                            <input type="checkbox" name="vacina" class="vacina" />
-                            <label>Meningite B e ACWY</label>
-                        </td>
-                    </tr>
-                    <td id="vacLinha3">
+                    <label id="labelComor">Comorbidade</label><br>
+                    <select name="comorbidade" id="comorbidade">
+                        <option value="Nenhuma" selected>Nenhuma</option>
+                        <option value="Hipertensão">Hipertensão Grave</option>
+                        <option value="Diabetes">Diabetes</option>
+                        <option value="Doença Pulmonar">Doença Pulmonar Crônica</option>
+                        <option value="Doença Renal">Doença Renal</option>
+                        <option value="Doença Cardiovascular">Doença Cardiovascular</option>
+                        <option value="Doença Cerebrovascular">Doença Cerebrovascular</option>
+                        <option value="Transplantado">Transplantado de Órgãos Sólidos</option>
+                        <option value="CA">CA</option>
+                        <option value="Obesidade Mórbida "> Obesidade Mórbida</option>
+                        <option value="Anemia Falciforme">Anemia Falciforme</option>
+                        <option value="Deficiência Física">Deficiência Permanente Severa</option>
+                    </select><br>
+
+                    <label id="labelPeso">Peso (Kg)</label><br>
+                    <input type="text" name="peso" id="peso" placeholder="Peso " maxlength="3" minlength="2"
+                        onchange="verificaPeso()" /><br>
+                    <label id="labelAlt">Altura (m)</label><br>
+
+                    <input type="text" name="altura" id="altura" placeholder="Altura " maxlength="4" minlength="4"
+                        onchange="verificaAltura()" /><br>
+
+                    <label id="labelSus">Carteirinha do SUS</label><br>
+
+                    <input type="text" name="sus" id="sus" placeholder="Penas os Números " maxlength="15" minlength="15"
+                        onchange="verificaCarteirinha()" /><br>
+                </div>
+
+
+
+
+                <div id="vacinas">
+                    <label id="labelVac">Quais vacinas já Tomou:</label>
+
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
+                        <label>Sarampo</label>
+                    </div>
+
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
+                        <label>Hepatite B</label>
+                    </div>
+
+
+                    <div>
                         <input type="checkbox" name="vacina" class="vacina" />
+                        <label>Tríplice Viral (SRC)</label>
+                    </div>
+                    <div><input type="checkbox" name="vacina" class="vacina" />
+                        <label>Dupla Adulto (dt)</label>
+                    </div>
+
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
+                        <label>Febre Amarela</label>
+                    </div>
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
+                        <label>Influenza (gripe)</label>
+                    </div>
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
+                        <label>Pneumococo</label>
+                    </div>
+
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
+                        <label>Meningite B e ACWY</label>
+                    </div>
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
                         <label>HPV</label>
-                        <input type="checkbox" name="vacina" class="vacina" />
+                    </div>
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
                         <label>Herpes Zóster</label>
-                        <input type="checkbox" name="vacina" class="vacina" />
+                    </div>
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
                         <label>Hepatite A</label>
-                        <input type="checkbox" name="vacina" class="vacina" />
+                    </div>
+                    <div> <input type="checkbox" name="vacina" class="vacina" />
                         <label>Varicela(catapora)</label>
-                    </td>
-                    </tr>
-                    <!--Botão Concluído-->
-                    <tr>
-                        <td> <input type="button" id="button" value="Concluído"> </td>
-                    </tr>
-                </table>
+                    </div>
+
+                </div>
+
+
+              
+
+
             </form>
 
         </main>
@@ -264,17 +236,19 @@
             <div class="progress-label">Loading...</div>
         </div>
 
+        <input type="button" id="button" value="Concluído"> </td>
         <!--JavaScrip-->
         <script src="contato.js"></script>
 
 
     </div>
+
     <footer class="rodape">
         <nav class="social">
             <ul>
                 <li><a class="social-link" href="#"><img src="../../assets/img/icons/3225183-64.png"></a></li>
                 <li><a class="social-link" href="#"><img src="../../assets/img/icons/3225191-64.png"></a></li>
-                <li><a class="social-link" href="#"><img src="../../assets/img/icons//3225194-64.png"></a></li>
+                <li><a class="social-link" href="#"><img src="../../assets/img/icons/3225194-64.png"></a></li>
             </ul>
         </nav>
     </footer>

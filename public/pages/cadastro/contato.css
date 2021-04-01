@@ -9,14 +9,19 @@
 	grid-template-areas: "header header""article article""main aside""footer footer";
 	font-family: Ong;
 	background-image: url(../../assets/img/banner.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	font-family: Ong;
-
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+}
+#color{
+	font-size: 60px;
+	color: #fff;
 }
 
-
+@font-face {
+	font-family: Ong;
+	src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
 article{
 	/*background:  linear-gradient(135deg, #babbbbc0  10%, #babbbbc0 100%);*/
 	grid-area: article; 	
@@ -24,16 +29,17 @@ article{
 
 main {
 	background:  linear-gradient(135deg, #babbbbc0  10%, #babbbbc0 100%);
-	grid-area: main;
-	padding-top: 100px;	
-	height: 850px;
+	grid-area: main;	
+	padding-top: 60px;
+	height: 900px;
 }
 
 aside {
 	background: linear-gradient(135deg, #babbbbc0  10%, #babbbbc0 100%);
 	grid-area: aside;
-	padding-top: 100px;
-	height: 850px;}
+	padding-top: 60px;
+	height: 900px;
+}
 
 footer {	
 	grid-area: footer;
@@ -44,19 +50,10 @@ footer {
 
 /* ------------ Formulário ----------- */
 
-@font-face {
-	font-family: Ong;
-	src: url(../../assets/fonts/Roboto-Regular.ttf);
-}
-.acssOn{
-	font-size: 20px;
- }
- 
-
 form {
 	display: flex;
 	width: 700px;
-	flex-wrap: wrap;
+	
 	margin-bottom: 850px;
 	margin: auto;
 	justify-content: center;
@@ -67,135 +64,55 @@ h1 {
 	margin-top: 2%;
 	text-align: center;
 }
-#nome {
-    width: 300px;
+
+.acssOn{
+	font-size: 30px;
+ }
+ 
+
+#adiv{
+	width: 80%;
 }
-#labelNom{
-	margin-right: 240px;
-}
-#etnia{
-	width: 140px;
-}
-#labelEtnia{
-	margin-right: 10px;
-}
-#nascimento {	
-    width: 200px;
-}
-#labelNasc{
-	margin-right: 100px;	
-}
-#tel {	
-    width: 200px;
-	margin-left: 10px;
-}
-#labelTel{
-	margin-left: 15px;	
-}
-#sexo{
-	width: 150px;
-	margin-left: 0px;
-}
-#labelSex{
-	margin-right: 115px;
-}
-#gestante{
-	margin-left: 5px;
-	width: 75px;
-}
-#labelGest{
-	margin-right: 10px;
-}
-#cpf {	
-    width: 200px;
-	margin-left: 10px;
-}	
-#labelCpf{
-	margin-left: 10px;
+#adiv input{
+	width: 80%;
 }
 
-#profissao{
-	margin-right: 20px;
-	width: 220px;
-}
-#labelProf{
-	margin-right: 170px;	
-}
-#outrosProf{	    
-	margin-left: 0px;
-	width: 200px;	
-} 
-#labelOut{
-	margin-right: 160px;
-}
-#comorbidade{	
-	width: 200px;
-	margin-right: 20px;
-}
-#labelComor{
-	margin-right: 130px;
-}
-#peso{
-	width: 80px;
-	margin-right: 20px;
-}
-#labelPeso{
-	margin-right: 70px;
-}
-#altura{
-	width: 80px;
-}
-#labelAlt{
-	margin-right: 20px;	
-}
-#sus{
-	width: 200px;
-	margin-right: 250px;
-}
-#labelSus{
-	margin-right: 325px;	
-}
-#labelVac{
-	font-size: 16px;
+select{
+	width: 85%;
 }
 
-input{
-	height: 16px;
+#vacinas{
+	width: 180px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-td{
-	padding-top: 7px;
-}
+
 select {
 	height: 30px;    
 	display: inline;
 	font-weight: 600;
-	color: #007fff;
+	color: #002272;
 	-webkit-appearance: none;
   	appearance: none;
 
 }
-
-#title5{
-	color: #fff;
-	font-size: 50px;
-}
 input, select {	
 	font-size: 15px;   
 	border-radius: 50px;
-	color: #007fff;
+	color: #002272;
 	background-color:white;
 	padding: 5px 15px;
 	text-align: center;
 }
 input:focus, select:focus {
 	outline: none;
-	color: #007fff;	
+	color: #002272;	
 }
 select:focus {
 	width: 150px;
 	outline: none;
-	color: #007fff;
+	color: #002272;
 	text-align: center;
 }
 label{
@@ -226,7 +143,7 @@ select
 
 #divTexto{
 	font: 25px;
-	margin-top: 5%;
+	margin-top: 5% auto;
     width: 550px;
     height: 450px;
     background-color:  linear-gradient(135deg, #868486e8 10%, #babbbbc0 100%);
@@ -236,6 +153,7 @@ select
     border: dashed 3px rgb(22, 22, 22);
     border-radius: 35px;
 	padding: 20px;
+	
 }
 p{
 	padding: 15px;
@@ -244,6 +162,7 @@ p{
 }
 
 input#button {
+	position: absolute;
 	height: 60px;
 	width: 200px;
 	border: 1px solid white;
@@ -252,8 +171,8 @@ input#button {
 	font-size: 20px;
 	font-weight: bold;
 	font-variant: small-caps;
-	margin: 30px;
-	margin-left: 133px;
+	margin-left: 1000px;
+	margin-top: 1020px;
 	background-image: linear-gradient(135deg, #9708cc 10%, #0990f1 100%);
   }
 
@@ -296,13 +215,14 @@ input#button {
 
 /******************Barra**************************/
 .ui-progressbar {
-	position: relative;
+	position: absolute;
 	width: 200px;
-	margin-top: 1050px;
-	margin-left: 250px;
+	top: 1150px;
+	margin-left: 1200px;
   }
   .progress-label {
 	position: absolute;
 	font-weight: bold;
 	text-shadow: 1px 1px 0 #fff;
   }
+  

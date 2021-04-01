@@ -7,13 +7,22 @@ body,
          margin: 0;
          padding: 0;
          list-style: none;
-         font-family: Font;
+         font-family: Ong;
          overflow-x: hidden;
       }
       @font-face {
-        font-family: Font;
-        src: url(public/assets/fonts/02_APompadourTextSample.otf);
-     }
+         font-family: Ong;
+         src: url(../../assets/fonts/Roboto-Regular.ttf);
+      }
+      .acssOn{
+         font-size: 30px;
+      }
+      #font-size{
+         font-size: 30px;
+      }
+      #title-size{
+         font-size: 40px;
+      }
      #menu-aside{
       width: 200px;
       height: 200px;

@@ -1,0 +1,308 @@
+
+
+/* Grid */
+
+.conteiner {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 10vh 25vh 85vh 12vh;
+	grid-template-areas: "header header""article article""main aside""footer footer";
+	font-family: Ong;
+	background-image: url(../../assets/img/banner.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: Ong;
+
+}
+
+
+article{
+	/*background:  linear-gradient(135deg, #babbbbc0  10%, #babbbbc0 100%);*/
+	grid-area: article; 	
+}
+
+main {
+	background:  linear-gradient(135deg, #babbbbc0  10%, #babbbbc0 100%);
+	grid-area: main;
+	padding-top: 100px;	
+	height: 850px;
+}
+
+aside {
+	background: linear-gradient(135deg, #babbbbc0  10%, #babbbbc0 100%);
+	grid-area: aside;
+	padding-top: 100px;
+	height: 850px;}
+
+footer {	
+	grid-area: footer;
+}
+
+/* fim do Grid */
+
+
+/* ------------ Formulário ----------- */
+
+@font-face {
+	font-family: Ong;
+	src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+.acssOn{
+	font-size: 20px;
+ }
+ 
+
+form {
+	display: flex;
+	width: 700px;
+	flex-wrap: wrap;
+	margin-bottom: 850px;
+	margin: auto;
+	justify-content: center;
+}
+h1 {
+	font-size: 30px;
+	margin: 5%;
+	margin-top: 2%;
+	text-align: center;
+}
+#nome {
+    width: 300px;
+}
+#labelNom{
+	margin-right: 240px;
+}
+#etnia{
+	width: 140px;
+}
+#labelEtnia{
+	margin-right: 10px;
+}
+#nascimento {	
+    width: 200px;
+}
+#labelNasc{
+	margin-right: 100px;	
+}
+#tel {	
+    width: 200px;
+	margin-left: 10px;
+}
+#labelTel{
+	margin-left: 15px;	
+}
+#sexo{
+	width: 150px;
+	margin-left: 0px;
+}
+#labelSex{
+	margin-right: 115px;
+}
+#gestante{
+	margin-left: 5px;
+	width: 75px;
+}
+#labelGest{
+	margin-right: 10px;
+}
+#cpf {	
+    width: 200px;
+	margin-left: 10px;
+}	
+#labelCpf{
+	margin-left: 10px;
+}
+
+#profissao{
+	margin-right: 20px;
+	width: 220px;
+}
+#labelProf{
+	margin-right: 170px;	
+}
+#outrosProf{	    
+	margin-left: 0px;
+	width: 200px;	
+} 
+#labelOut{
+	margin-right: 160px;
+}
+#comorbidade{	
+	width: 200px;
+	margin-right: 20px;
+}
+#labelComor{
+	margin-right: 130px;
+}
+#peso{
+	width: 80px;
+	margin-right: 20px;
+}
+#labelPeso{
+	margin-right: 70px;
+}
+#altura{
+	width: 80px;
+}
+#labelAlt{
+	margin-right: 20px;	
+}
+#sus{
+	width: 200px;
+	margin-right: 250px;
+}
+#labelSus{
+	margin-right: 325px;	
+}
+#labelVac{
+	font-size: 16px;
+}
+
+input{
+	height: 16px;
+}
+
+td{
+	padding-top: 7px;
+}
+select {
+	height: 30px;    
+	display: inline;
+	font-weight: 600;
+	color: #007fff;
+	-webkit-appearance: none;
+  	appearance: none;
+
+}
+
+#title5{
+	color: #fff;
+	font-size: 50px;
+}
+input, select {	
+	font-size: 15px;   
+	border-radius: 50px;
+	color: #007fff;
+	background-color:white;
+	padding: 5px 15px;
+	text-align: center;
+}
+input:focus, select:focus {
+	outline: none;
+	color: #007fff;	
+}
+select:focus {
+	width: 150px;
+	outline: none;
+	color: #007fff;
+	text-align: center;
+}
+label{
+    font-size: 14px;
+	color: black;
+	font-weight: bold;
+	padding-left: 7px;
+}
+
+select
+.gestante{
+	opacity: 0.4;
+	
+}
+.gestanteAlternativa{
+	opacity: 1;
+}
+.outraProf{
+	opacity: 0.4;
+}
+.outraProfAlternativa{
+	opacity: 1;
+}
+
+/* ------------ fim Formulário----------- */
+
+/* ------------ Caixa de Texto ----------- */
+
+#divTexto{
+	font: 25px;
+	margin-top: 5%;
+    width: 550px;
+    height: 450px;
+    background-color:  linear-gradient(135deg, #868486e8 10%, #babbbbc0 100%);
+    color: rgb(19, 18, 18);
+    text-align: start;		   
+    font: normal 18px Arial;
+    border: dashed 3px rgb(22, 22, 22);
+    border-radius: 35px;
+	padding: 20px;
+}
+p{
+	padding: 15px;
+	line-height: 50px;
+	font-size: 20px;
+}
+
+input#button {
+	height: 60px;
+	width: 200px;
+	border: 1px solid white;
+	border-radius: 7px ;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-variant: small-caps;
+	margin: 30px;
+	margin-left: 133px;
+	background-image: linear-gradient(135deg, #9708cc 10%, #0990f1 100%);
+  }
+
+/* ------------ footer ----------- */
+
+/*inicio footer*/
+
+#footer {
+	clear: both; 
+	margin: 0 auto;
+	position: relative;
+	bottom: 0;
+	display: flex; 
+  }
+    
+  #anoFooter{
+	clear: both;
+	position: absolute;  
+	top: 0px;
+	margin: 25px 25px 25px 40px;
+	font-size: 14px;
+	font-variant: small-caps;
+  }
+
+  #footer{
+	align-items: center;
+}
+
+  span#ano {
+	clear: both;
+	position: absolute;  
+	bottom: 0;
+	margin: 2px;
+	margin-left: 45%;  
+  }
+  /*fim footer*/
+  
+
+/*linear-gradient(135deg, #868486e8 10%, #babbbbc0 100%)*/
+
+/******************Barra**************************/
+.ui-progressbar {
+	position: relative;
+	width: 200px;
+	margin-top: 1050px;
+	margin-left: 250px;
+  }
+  .progress-label {
+	position: absolute;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 #fff;
+  }

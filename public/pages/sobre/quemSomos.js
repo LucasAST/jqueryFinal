@@ -6,8 +6,8 @@ $(document).ready(function(){
   });
 
   $('#decrease').click(function(){
-    $('body, .txtParticipe').removeClass('acssOn');
     
+    $('body, .txtParticipe p h3').removeClass('acssOn');
     
   });
     /* função jquery usando SlideToggle */ 

@@ -419,8 +419,8 @@ function VerificaCPF() {
         resto = 11 - resto;
     }
     if (resto != parseInt(strCpf.substring(9, 10))) {
-        alert("CPF Válido");
-        return false;
+       // alert("CPF Válido");
+        //return false;
     }
     soma = 0;
 

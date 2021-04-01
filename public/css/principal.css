@@ -103,20 +103,28 @@ p {
 }
 .social {
    display: block;
+   overflow: hidden;
+
 }
 .social li a {
    display: block;
    padding: 10px;
+   overflow: hidden;
+
 }
 .social li {
    display: inline-block;
    margin-left: 10px;
+   overflow: hidden;
+
 }
 .social-link:hover {
    display: flex;
    z-index: 1;
    transform: scale(1.3);
    transition: all 2s;
+   overflow: hidden;
+
 }
 /* SECTION */
 #section2, #section3{
@@ -126,7 +134,7 @@ p {
    height: auto;
    text-align: center;
    margin-top: 300px;
-   background-color: #fff;
+   background-color: rgba(240, 236, 236, 0.7);   
    border-radius: 10px;
 }
 #section4, #section5{
@@ -139,7 +147,7 @@ p {
    justify-content: center;
    display: flex;
    justify-content: center;
-   background-color: #fff;
+   background-color: rgba(240, 236, 236, 0.7);   
    border-radius: 10px;
 }
 #section1{

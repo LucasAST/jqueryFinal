@@ -15,7 +15,7 @@ body,
          src: url(../../assets/fonts/Roboto-Regular.ttf);
       }
       .acssOn{
-         font-size: 30px;
+         font-size: 35px;
       }
       #font-size{
          font-size: 30px;
@@ -177,7 +177,7 @@ img{
      
 }
 #quemSomos p{ 
-    font-size: 1.5rem;
+   /*  font-size: 20px; */
     padding: 25px;
    text-align: justify;
    
@@ -208,7 +208,7 @@ img{
 }
 
 #projetos p{ 
-    font-size: 1.5rem;
+   /*  font-size: 20px;*/
     padding: 10px;
 }
 #participe{ 
@@ -232,12 +232,13 @@ img{
    margin-top: 100px;
    width: 50%;
    height: 100%;
-   font-size: 1.5rem;
+    /* font-size: 30px;*/
     padding: 10px;
 }
 #saibaMais{
-   font-size: 30px;
+  /*  font-size: 30px; */
 }
+
 
 button{
    margin: 10px;
@@ -292,7 +293,7 @@ button{
 }
 
 #desenvolvedores p { 
-   font-size: 1.5rem;
+  /* font-size: 25px; */
    padding: 10px;
    margin-bottom: 20px;
 }

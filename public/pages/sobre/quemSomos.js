@@ -1,11 +1,15 @@
 $(document).ready(function(){ 
   $('#upper').click(function(){
-    $('section, p').addClass('acssOn');
-  })
+    $('body, .txtParticipe').addClass('acssOn');
+   
+    
+  });
 
   $('#decrease').click(function(){
-    $('section, p').removeClass('acssOn');
-  })
+    $('body, .txtParticipe').removeClass('acssOn');
+    
+    
+  });
     /* função jquery usando SlideToggle */ 
     $('.txtProjetos').css('display', 'none');
     $('#saibaMais').click(function(){

@@ -26,7 +26,7 @@ p {
    display: block;
 }
 .cabecalho {
-   background-color: #007fff;
+   background-color: rgb(37, 41, 255);
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
@@ -55,7 +55,7 @@ p {
 #menu-aside{
     width: 200px;
     height: 200px;
-    background-color: #007fff;
+    background-color: rgb(37, 41, 255);
     position: fixed;
     z-index: 3;
     border-radius: 20px 0px 0px 20px;
@@ -92,7 +92,7 @@ p {
 
 /*  FOOTER */
 .rodape {
-   background-color: #007fff;
+   background-color: rgb(37, 41, 255);
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -166,7 +166,7 @@ a{
    color: #fff;
 }
 #link-ancora:hover{
-   color:#007fff;
+   color:rgb(37, 41, 255);
 }
 .container{
    width: 100%;
@@ -198,7 +198,7 @@ a{
 /*SECTION 4*/
 .title-4, .title-5{
    width: 100%;
-   background-color: #007fff;
+   background-color: rgb(37, 41, 255);
    color: #fff;
    border-radius: 10px;
    padding: 10px;
@@ -208,19 +208,12 @@ a{
    color: #121212;
    border-radius: 10px;
    font-size: 20px;
-   padding: 10px; 
-}
-#p-border{
-border: 1px solid black;
-border-radius: 10px;
-}
-#p-border-2{
-   border: 1px solid black;
-   border-radius: 10px;
+   padding: 10px;
 }
 #content-4{
-   width: 60%;
+   width: 80%;
 }
+
 .acssOn{
    font-size: 30px;
 }

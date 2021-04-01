@@ -19,16 +19,30 @@ crossorigin="anonymous">
 
 <body>
     <header class="cabecalho">
-        <a id="nav-link-t" href="#">Lorem</a>
+        <a id="nav-link-t" href="../../../principal.html">Lorem</a>
         <nav class="menu">
             <ul>
-                <li><a id="nav-link" href="#">Lorem</a></li>
-                <li><a id="nav-link" href="#">Lorem</a></li>
-                <li><a id="nav-link" href="#">Lorem</a></li>
+                <li><a id="nav-link" href="#">Sobre nós</a></li>
+                <li><a id="nav-link" href="../leitos/leitos.html">Entenda as fases</a></li>
+                <li><a id="nav-link" href="#">Cadastro</a></li>
             </ul>
         </nav>
     </header>
-
+    <div id="menu-aside">
+        <div class="btns">
+           <img src="../../assets/img/icons/7694034-128.png" width="60px" id="upper">
+           <img src="../../assets/img/icons/7694033-128.png" width="60px" id="decrease">
+        </div>
+        <div class="clock">
+           <input type='text' value='00:00:00' id='relogio' readonly size='6'
+              style="font-size: 200%; color:#fff; background-color: transparent; border: none;" />
+           <script type="text/javascript" src="../../js/clock.js"></script>
+        </div>
+        <div class="date">
+           <span id="data" disabled='disabled' style="color: #fff;"> </span>
+           <script type="text/javascript" src="../../js/date.js"></script>
+        </div>
+     </div>
     <h1>Quem Somos</h1>
     <section id="quemSomos" class="anime_inicial">
         <div class="imgQuemSomos"><img src="img/coronavirus-mascaras.jpg" alt="criança vendendo máscaras"
@@ -131,9 +145,9 @@ crossorigin="anonymous">
     <footer class="rodape">
         <nav class="social">
             <ul>
-                <li><a class="social-link" href="#"><img src="../public/assets/img/icons/3225183-64.png"></a></li>
-                <li><a class="social-link" href="#"><img src="../public/assets/img/icons/3225191-64.png"></a></li>
-                <li><a class="social-link" href="#"><img src="../public/assets/img/icons/3225194-64.png"></a></li>
+                <li><a class="social-link" href="#"><img src="../../assets/img/icons/3225183-64.png"></a></li>
+                <li><a class="social-link" href="#"><img src="../../assets/img/icons/3225191-64.png"></a></li>
+                <li><a class="social-link" href="#"><img src="../../assets/img/icons/3225194-64.png"></a></li>
             </ul>
         </nav>
     </footer>

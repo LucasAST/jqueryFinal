@@ -14,6 +14,44 @@ body,
         font-family: Font;
         src: url(public/assets/fonts/02_APompadourTextSample.otf);
      }
+     #menu-aside{
+      width: 200px;
+      height: 200px;
+      background-color: #007fff;
+      position: fixed;
+      z-index: 3;
+      border-radius: 0px 20px 20px 0px;
+      left: 0;
+  }
+  .clock{
+     display: flex;
+     justify-content: center;
+     margin-top: 10px;
+     font-size: 20px;
+  }
+  .btns{
+     display: flex;
+     justify-content: center;
+     padding-top: 10px; 
+  }
+  #upper{
+     margin-left: 10px;
+  }
+  .date{
+     display: flex;
+     justify-content: center;
+  }
+  #relogio{
+     margin-left: 15px;
+  }
+  .date{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    margin-left: 7px;
+    padding-top: 15px;
+  }
+  
 
      #nav-link {
         text-decoration: none;
@@ -33,7 +71,7 @@ body,
      }
 
      .cabecalho {
-        background-color: rgb(37, 41, 255);
+        background-color: #007fff;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -65,7 +103,7 @@ body,
 
      /*  FOOTER */
      .rodape {
-        background-color: rgb(37, 41, 255);
+        background-color: #007fff;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -111,7 +149,7 @@ img{
     text-align: center;
     padding: 30px;
     margin-bottom: 80px;
-   background-color: rgb(111, 113, 252);
+   background-color: #007fff;
    border: none;
    border-radius: 10px;
    margin: 50px;
@@ -145,7 +183,7 @@ img{
     text-align: center;
     padding: 50px;
     margin-bottom: 80px;
-    background-color: rgb(111, 113, 252);
+    background-color: #007fff;
    border: none;
    border-radius: 10px;
     margin: 50px;
@@ -171,7 +209,7 @@ img{
    text-align: center;
    padding: 30px;
    margin-bottom: 80px;
-  background-color: rgb(111, 113, 252);
+  background-color: #007fff;
   border: none;
   border-radius: 10px;
   margin: 50px;
@@ -198,11 +236,11 @@ button{
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  background-color: rgb(111, 113, 252);
+  background-color: #007fff;
  }
  
  button:hover {
-   background-color: rgb(77, 80, 247);
+   background-color: #007fff;
    color: black;
  }
  
@@ -216,7 +254,7 @@ button{
     display: flex;
     flex-direction: column;
     justify-content:space-around;
-    background-color: rgb(111, 113, 252);
+    background-color: #007fff;
    
 }
 

@@ -5,11 +5,12 @@ $(document).ready(function () {
 
     $('#upper').click(function(){
         $('label').addClass('acssOn');
-       
+       $('#vacinas').css('width', '350px');
       });
     
       $('#decrease').click(function(){
         $('label').removeClass('acssOn');
+        $('#vacinas').css('width', '180px')
       });
         
 

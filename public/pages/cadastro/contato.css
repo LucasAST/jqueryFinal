@@ -154,6 +154,7 @@ select
     border: dashed 3px rgb(22, 22, 22);
     border-radius: 35px;
 	padding: 20px;
+	margin: 0 auto;
 	
 }
 p{
